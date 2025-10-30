@@ -2,9 +2,9 @@
 // Simple PHP Portfolio Website
 
 // Basic site data
-$name = "John Doe";
-$title = "Web Developer & Designer";
-$bio = "I create responsive, user-friendly websites and web apps. Passionate about clean code and modern design.";
+$name = "Romilola Olajumoke";
+$title = "Parfiat Vendor";
+$bio = "Ark of light, cute eyes, fine smile, dark skin.";
 $projects = [
     ["title" => "Portfolio Website", "desc" => "A personal portfolio built with PHP and CSS."],
     ["title" => "Blog CMS", "desc" => "A simple blog content management system in PHP."],
