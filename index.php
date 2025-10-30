@@ -1,14 +1,15 @@
 <?php
-// Simple PHP Portfolio Website
+// Romilola Bashorun's Portfolio Website
 
-// Basic site data
-$name = "Romilola Olajumoke";
-$title = "Parfiat Vendor";
-$bio = "Ark of light, cute eyes, fine smile, dark skin.";
+$name = "Romilola Bashorun";
+$title = "Top Parfiat Vendor in Lagos";
+$bio = "Romilola Bashorun is a leading Parfiat vendor based in Lagos, known for her delicious creations and exceptional customer service. 
+She is also a social media manager at Dunhood Electrical Appliances and attends Ark of Light for All Nations. 
+Proudly Yoruba from Akure, she’s widely admired for her grace, confidence, and beauty.";
 $projects = [
-    ["title" => "Portfolio Website", "desc" => "A personal portfolio built with PHP and CSS."],
-    ["title" => "Blog CMS", "desc" => "A simple blog content management system in PHP."],
-    ["title" => "E-commerce Store", "desc" => "A small store built with PHP and MySQL."],
+    ["title" => "Signature Parfiat Line", "desc" => "A vibrant collection of Lagos’ favorite parfait flavors."],
+    ["title" => "Social Media Growth for Dunhood Electricals", "desc" => "Managed campaigns that boosted online reach and engagement."],
+    ["title" => "Community Outreach", "desc" => "Partnered with local events to promote healthy dessert choices."],
 ];
 ?>
 <!DOCTYPE html>
@@ -18,18 +19,21 @@ $projects = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $name ?> - Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
-        header { background: #333; color: white; text-align: center; padding: 2em 0; }
-        .container { width: 80%; margin: 2em auto; }
-        h1, h2 { margin-bottom: 0.5em; }
-        .bio { margin-bottom: 2em; }
-        .project { background: white; padding: 1em; margin-bottom: 1em; border-radius: 8px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
-        footer { text-align: center; padding: 1em; background: #333; color: white; }
+        body { margin: 0; font-family: 'Poppins', sans-serif; background: #f8f9fa; color: #333; }
+        header { background: linear-gradient(135deg, #ff7eb3, #ff758c); color: white; text-align: center; padding: 3em 1em; }
+        header img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid white; margin-bottom: 1em; }
+        .container { width: 85%; max-width: 900px; margin: 2em auto; }
+        h1, h2 { margin-bottom: 0.3em; }
+        .bio { background: white; padding: 2em; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-bottom: 2em; }
+        .projects .project { background: white; padding: 1.5em; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.08); margin-bottom: 1em; transition: transform 0.3s ease; }
+        .projects .project:hover { transform: translateY(-5px); }
+        footer { text-align: center; padding: 1em; background: #ff758c; color: white; font-size: 0.9em; }
     </style>
 </head>
 <body>
 
 <header>
+    <img src="romilola.jpg" alt="Romilola Bashorun">
     <h1><?= $name ?></h1>
     <p><?= $title ?></p>
 </header>
@@ -41,7 +45,7 @@ $projects = [
     </section>
 
     <section class="projects">
-        <h2>Projects</h2>
+        <h2>My Work</h2>
         <?php foreach ($projects as $project): ?>
             <div class="project">
                 <h3><?= $project['title'] ?></h3>
